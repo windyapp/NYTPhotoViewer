@@ -10,16 +10,6 @@
 #import "NYTPhoto.h"
 #import "NYTScalingImageView.h"
 
-#ifdef ANIMATED_GIF_SUPPORT
-#if SWIFT_PACKAGE
-  #import "PINRemoteImage.h"
-  #import "PINAnimatedImageView.h"
-#else
-  #import <PINRemoteImage/PINRemoteImage.h>
-  #import <PINRemoteImage/PINAnimatedImageView.h>
-#endif
-#endif
-
 NSString * const NYTPhotoViewControllerPhotoImageUpdatedNotification = @"NYTPhotoViewControllerPhotoImageUpdatedNotification";
 
 @interface NYTPhotoViewController () <UIScrollViewDelegate>
