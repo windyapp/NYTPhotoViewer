@@ -19,16 +19,6 @@
 #import "NSBundle+NYTPhotoViewer.h"
 #import <LinkPresentation/LPLinkMetadata.h>
 
-#ifdef ANIMATED_GIF_SUPPORT
-#if SWIFT_PACKAGE
-  #import "PINRemoteImage.h"
-  #import "PINAnimatedImageView.h"
-#else
-  #import <PINRemoteImage/PINRemoteImage.h>
-  #import <PINRemoteImage/PINAnimatedImageView.h>
-#endif
-#endif
-
 NSString * const NYTPhotosViewControllerDidNavigateToPhotoNotification = @"NYTPhotosViewControllerDidNavigateToPhotoNotification";
 NSString * const NYTPhotosViewControllerDidNavigateToInterstitialViewNotification = @"NYTPhotosViewControllerDidNavigateToInterstitialViewNotification";
 NSString * const NYTPhotosViewControllerWillDismissNotification = @"NYTPhotosViewControllerWillDismissNotification";

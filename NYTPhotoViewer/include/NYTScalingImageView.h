@@ -8,10 +8,6 @@
 
 @import UIKit;
 
-#ifdef ANIMATED_GIF_SUPPORT
-@class PINAnimatedImageView;
-#endif
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NYTScalingImageView : UIScrollView
@@ -19,11 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  The image view used internally as the contents of the scroll view.
  */
-#ifdef ANIMATED_GIF_SUPPORT
-@property (nonatomic, readonly) PINAnimatedImageView *imageView;
-#else
 @property (nonatomic, readonly) UIImageView *imageView;
-#endif
 
 /**
  *  Initializes a scaling image view with a `UIImage`. This object is a `UIScrollView` that contains a `UIImageView`. This allows for zooming and panning around the image.
